@@ -1,4 +1,4 @@
-name: Dev Synk
+name: Prod Synk
 
 on:
     workflow_dispatch:
