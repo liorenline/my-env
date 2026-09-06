@@ -18,6 +18,5 @@ jobs:
         steps:
             - uses: hashicorp/setup-terraform@v4
             - name: Terraform dev
-              run: 
-                terraform init
-                terraform apply
+              working-directory: .
+              run: echo "running"
