@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "docker" {
-    host = "unix:///Users/ivanna.dudka/.colima/default/docker.sock"
+    # host = "unix:///Users/ivanna.dudka/.colima/default/docker.sock"
 }
 
 resource "docker_image" "nginx" {
