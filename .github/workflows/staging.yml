@@ -17,5 +17,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
-            - name: Build the Docker image
-              run: echo "running staging"
+            - uses: hashicorp/setup-terraform@v4
+            - name: Terraform staging
+              working-directory: modules
+              run: terraform init && terraform apply -auto-approve
