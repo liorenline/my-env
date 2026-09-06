@@ -1,15 +1,15 @@
-name: Dev Synk
+name: Staging synk
 
 on:
     workflow_dispatch:
         inputs:
             environment:
-                description: 'dev'
+                description: 'staging'
                 required: true
-                default: 'dev'
+                default: 'staging'
                 type: choice
                 options:
-                - dev
+                - staging
 
 jobs:
     build:
@@ -18,4 +18,4 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Build the Docker image
-              run: echo "running dev"
+              run: echo "running staging"

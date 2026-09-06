@@ -4,12 +4,12 @@ on:
     workflow_dispatch:
         inputs:
             environment:
-                description: 'dev'
+                description: 'prod'
                 required: true
-                default: 'dev'
+                default: 'prod'
                 type: choice
                 options:
-                - dev
+                - prod
 
 jobs:
     build:
